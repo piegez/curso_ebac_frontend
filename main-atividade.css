@@ -1,0 +1,65 @@
+* {
+    margin: 100;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    background-color: #9AD0C2;
+    padding: 16px 0;
+    color: white;
+    display: flex;
+    border-bottom: 16px solid #265073;
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: bold;
+}
+
+form {
+    background-color: #ECF4D6;
+    padding: 24px 0;
+    text-align: center;
+}
+
+form h2 {
+    margin-bottom: 16px;
+}
+
+input, button {
+    padding: 8px;
+}
+
+button {
+    background-color: #2D9596;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+#botao-cancelar {
+    background-color: #9AD0C2;
+}
+
+ul {
+    text-align: center;
+    display: inline;
+    text-transform: uppercase;
+
+}
+
+ul li {
+    list-style: inside;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 20px;
+    
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #9AD0C2;
+}
+
