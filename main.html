@@ -15,7 +15,7 @@
     <header>
         <div class="container container-flex">
         <h1>EBAC Motors</h1>
-        </div>
+        
 
         <!-- Adicionando  o menu hamburger -->
 
@@ -25,6 +25,7 @@
             <span></span>
             <span></span>
             <span></span>
+        </div>
         </div>
 
         <!-- Adicionando  o menu -->
@@ -214,7 +215,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="contato">
             <div class="container">
                 <h2>Entre em contato</h2>
                 <form>
@@ -275,50 +276,9 @@
 
     <!-- criando um inicializador do jQuery -->
     <!-- slick serve para inicias a função carrossel -->
-    <script>
+    <script src="./JS/main.js">
         
-        $(document).ready(function() {
-            $('#carrossel-imagens').slick({ 
-                autoplay: true,
-            }); 
-    
-            $('.menu-hamburger').click(function() {
-                $('nav').slideToggle(); 
-            })
-            
-            $('#telefone').mask('(00) 00000-0000')
 
-            $('form').validate({
-                rules: {
-                    nome: {
-                        required: true,
-                    },
-                    email: {
-                        required: true,
-                        email: true
-                    },
-                    telefone: {
-                        required: true,
-                    },
-                    mensagem: {
-                        required: true,
-                    },
-                    veiculoDeInteresse: {
-                        required: false,
-                    }
-                    
-                },
-                submitHandler: function(form) {
-                    console.log(form)
-                },
-                invalidHandler: function(evento, validador){
-                    let camposIncorretos = validador.numberOfInvalids();
-                    if (camposIncorretos) {
-                        alert(`Existem ${camposIncorretos} campos incorretos`)
-                    }
-                }
-            })
-        })
     </script>
 </body>
 </html>
