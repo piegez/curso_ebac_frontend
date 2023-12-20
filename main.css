@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 3px;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    background-color: #FEFAE0;
+}
+
+.container {
+    padding: 20px 0;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border-style: dashed;
+    border-color: #5F6F52;
+}
+
+#nome  {
+    background:#A9B388;
+    border:1px solid #5F6F52;
+}
+#cpf  {
+    background:#A9B388;
+    border:1px solid #5F6F52;
+}
+#numero-telefone  {
+    background:#A9B388;
+    border:1px solid #5F6F52;
+}
+#e-mail  {
+    background:#A9B388;
+    border:1px solid #5F6F52;
+}
+
+#cep  {
+    background:#A9B388;
+    border:1px solid #5F6F52;
+}
+
+#mensagem  {
+    background:#A9B388;
+    border:1px solid #5F6F52;
+}
+
+footer > .container {
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.formulario-contato{
+    align-items: center;
+}
+
+.form-campo textarea {
+    resize: none; 
+    height: 120px;
+    width: 200px;
+}
+
+footer > .container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
