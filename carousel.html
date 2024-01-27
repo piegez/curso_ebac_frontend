@@ -4,38 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrap.min.css" />
 </head>
 <body>
-    <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div data-bs-interval="2000" class="carousel-item active">
-                <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/11/30/07/04/shetland-sheepdog-8420917_1280.jpg" />
-                <div class="carousel-caption">
-                    <h2>Foto 1</h2>
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="2000" class="carousel-item active">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/11/30/07/04/shetland-sheepdog-8420917_1280.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Foto 1</h2>
+                    </div>
+                </div>
+    
+                <div data-bs-interval="2000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/12/08/08/58/sea-8437245_960_720.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Foto 2</h2>
+                    </div>
+                </div>
+    
+                <div data-bs-interval="2000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/12/15/21/47/cat-8451431_1280.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Foto 3</h2>
+                    </div>
                 </div>
             </div>
-
-            <div data-bs-interval="2000" class="carousel-item">
-                <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/12/08/08/58/sea-8437245_960_720.jpg" />
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+    
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+    
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
             </div>
-
-            <div data-bs-interval="2000" class="carousel-item">
-                <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/12/15/21/47/cat-8451431_1280.jpg" />
-            </div>
-        </div>
-        <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-
-        <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
-            <span class="carousel-control-next-icon"></span>
-        </button>
-
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
-            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
         </div>
     </div>
     <script src="lib/bootstrap.bundle.min.js"></script>
