@@ -20,9 +20,23 @@ class Professor {
     }
 }
 
+// Professor Junior tem um bonus de 3 horas por semana
+class ProfessorJunior extends Professor {
+    calcularHorasPorSemana() {
 
-class ProfessorJunior extends Professor {}
+        return this.quantidadeAulas * this.horasPorAula + 3; 
+    }
+}
 
+// Professor Anvancado tem um bonus de 4 horas por semana
+class ProfessorAnvancado extends Professor {
+    calcularHorasPorSemana() {
+
+        return this.quantidadeAulas * this.horasPorAula + 4; 
+    }
+}
+
+// Professor Senior tem um bonus de 5 horas por semana
 class ProfessorSenior extends Professor {
     calcularHorasPorSemana() {
 
@@ -34,7 +48,7 @@ const professorJoao = new ProfessorJunior('João');
 professorJoao.setAulas(5);
 professorJoao.setHorasTrabalhadas(4);
 
-const professorMaria = new ProfessorJunior('Maria');
+const professorMaria = new ProfessorAnvancado('Maria');
 professorMaria.setAulas(4);
 professorMaria.setHorasTrabalhadas(3);
 
