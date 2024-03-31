@@ -1,4 +1,3 @@
-// primeiro vou criar a classe com as instâncias
 class Professor {
     constructor(nome) {
         this.nome = nome;
@@ -21,27 +20,29 @@ class Professor {
     }
 }
 
-// determinando o que via ser considerado final
-class ProfessorFinal extends Professor {
-    constructor(nome) {
-        super(nome);
+
+class ProfessorJunior extends Professor {}
+
+class ProfessorSenior extends Professor {
+    calcularHorasPorSemana() {
+
+        return this.quantidadeAulas * this.horasPorAula + 5; 
     }
 }
 
-//criando constantes 
-const professorJoao = new  ProfessorFinal('João');
+const professorJoao = new ProfessorJunior('João');
 professorJoao.setAulas(5);
 professorJoao.setHorasTrabalhadas(4);
 
-const professorMaria = new  ProfessorFinal('Maria');
+const professorMaria = new ProfessorJunior('Maria');
 professorMaria.setAulas(4);
 professorMaria.setHorasTrabalhadas(3);
 
-const professorPedro = new  ProfessorFinal('Pedro');
+const professorPedro = new ProfessorSenior('Pedro');
 professorPedro.setAulas(6);
 professorPedro.setHorasTrabalhadas(5);
 
-//chamando as constantes
+
 console.log(professorJoao.getInfo());
 console.log(professorMaria.getInfo());
 console.log(professorPedro.getInfo());
